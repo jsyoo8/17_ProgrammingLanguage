@@ -1,0 +1,46 @@
+﻿(define a 1)
+(define b '(1 2 3))
+(define c (- 5 2))
+(define d '(+ 2 3))
+(define test b)
+(+ a 3)
+(define a 2)
+(* a 4)
+((lambda (x) (* x -2)) 3)
+((lambda (x) (/ x 2)) a)
+((lambda (x y) (* x y)) 3 5)
+((lambda (x y) (* x y)) a 5)
+(define plus1 (lambda (x) (+ x 1)))
+(plus1 3)
+(define mul1 (lambda (x) (* x a)))
+(mul1 a)
+(define plus2 (lambda (x) (+ (plus1 x) 1)))
+(plus2 4)
+(define plus3 (lambda (x) (+ (plus1 x) a)))
+(plus3 a)
+(define mul2 (lambda (x) (* (plus1 x) -2)))
+(mul2 7)
+(define lastitem (lambda (ls) (cond ((null? (cdr ls)) (car ls)) (#T (lastitem (cdr ls))))))
+(define square (lambda (x) (* x x)))
+(define yourfunc (lambda (x func) (func x))
+(yourfunc 3 square)
+(define square (lambda (x) (* x x))) (define mul_two (lambda (x) (* 2 x))) (define new_fun (lambda (fun1 fun2 x) (fun2 (fun1 x)))) (new_fun square mul_two 10)
+define cube (lambda (n) (define sqrt (lambda (n) (* n n))) (* (sqrt n) n)))
+(sqrt 4)
+
+lambda
+dom : (x)
+fun : (* x -2)
+inputn : 3
+
+(lambda (x) (* x -2)) 3)
+((lambda (x) (* x -2)) 3))
+(lambda (x) (* x -2)))
+
+(plus2 4)
+
+(y x) ( - x y) (1 2)
+
+KEYWORD_LIST
+BINARYOP_LIST
+BOOLEAN_LIST
